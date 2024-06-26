@@ -19,6 +19,53 @@ body {
     background-color: #e3e9f7;
 }
 
+#auth_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e3e9f7;
+    width: 100%;
+}
+
+#login_form, #register_form {
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login_form h2, #register_form h2 {
+    margin-bottom: 20px;
+}
+
+#login_form label, #register_form label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+#login_form input, #register_form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#login_form button, #register_form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4f46e5;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#login_form button:hover, #register_form button:hover {
+    background-color: #3b3b9a;
+}
+
 main {
     padding: 20px;
     position: fixed;

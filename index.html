@@ -9,112 +9,109 @@
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/style.css">
-
 </head>
 
 <body>
-    <ul id="side_item">
+    <div id="auth_container">
+        <div id="login_form">
+            <h2>Login</h2>
+            <form id="login">
+                <label for="login_username">Username:</label>
+                <input type="text" id="login_username" name="username" required><br><br>
+                <label for="login_password">Password:</label>
+                <input type="password" id="login_password" name="password" required><br><br>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="#" id="show_register">Register here</a></p>
+        </div>
 
-    </ul>
+        <div id="register_form" style="display: none;">
+            <h2>Register</h2>
+            <form id="register">
+                <label for="register_username">Username:</label>
+                <input type="text" id="register_username" name="username" required><br><br>
+                <label for="register_password">Password:</label>
+                <input type="password" id="register_password" name="password" required><br><br>
+                <button type="submit">Register</button>
+            </form>
+            <p>Already have an account? <a href="#" id="show_login">Login here</a></p>
+        </div>
+    </div>
 
-    <nav id="sidebar">
-        <div id="sidebar_content">
-            <div id="user">
-                <img src="./img/Outros/Perfil.jpg" id="user_avatar" alt="Avatar">
+    <div id="main_content" style="display: none;">
+        <ul id="side_item"></ul>
 
-                <p id="user_infos">
-                    <span class="item-description">
-                        Fulano de Tal
-                    </span>
-                    <span class="item-description">
-                        Lorem Ipsum
-                    </span>
-                </p>
+        <nav id="sidebar">
+            <div id="sidebar_content">
+                <div id="user">
+                    <img src="./img/Outros/Perfil.jpg" id="user_avatar" alt="Avatar">
+                    <p id="user_infos">
+                        <span id="user_name" class="item-description">Fulano de Tal</span>
+                        <span class="item-description">Lorem Ipsum</span>
+                    </p>
+                </div>
+                <ul id="side_items">
+                    <li class="side-item active">
+                        <a href="#">
+                            <i class="fa-solid fa-house"></i>
+                            <span class="item-description">Inicio</span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#">
+                            <i class="fa-solid fa-khanda"></i>
+                            <span class="item-description">Armas</span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#">
+                            <i class="fa-solid fa-users"></i>
+                            <span class="item-description">Raças</span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#">
+                            <i class="fa-solid fa-shield-halved"></i>
+                            <span class="item-description">Armaduras</span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#">
+                            <i class="fa-solid fa-book-bible"></i>
+                            <span class="item-description">Deuses</span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#">
+                            <i class="fa-solid fa-mountain-city"></i>
+                            <span class="item-description">Mapa</span>
+                        </a>
+                    </li>
+                    <li class="side-item">
+                        <a href="#">
+                            <i class="fa-solid fa-gear"></i>
+                            <span class="item-description">Configurações</span>
+                        </a>
+                    </li>
+                </ul>
+                <button id="open_btn">
+                    <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
+                </button>
             </div>
+            <div id="logout">
+                <button id="logout_btn">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                    <span class="item-description">Logout</span>
+                </button>
+            </div>
+        </nav>
 
-            <ul id="side_items">
-                <li class="side-item active">
-                    <a href="#">
-                        <i class="fa-solid fa-house"></i>
-                        <span class="item-description">
-                            Inicio
-                        </span>
-                    </a>
-                </li>
+        <main>
+            <h1>Título</h1>
+        </main>
+    </div>
 
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-khanda"></i>
-                        <span class="item-description">
-                            Armas
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-users"></i>
-                        <span class="item-description">
-                            Raças
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-shield-halved"></i>
-                        <span class="item-description">
-                            Armaduras
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-book-bible"></i>
-                        <span class="item-description">
-                            Deuses
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-mountain-city"></i>
-                        <span class="item-description">
-                            Mapa
-                        </span>
-                    </a>
-                </li>
-
-                <li class="side-item">
-                    <a href="#">
-                        <i class="fa-solid fa-gear"></i>
-                        <span class="item-description">
-                            Configurações
-                        </span>
-                    </a>
-                </li>
-            </ul>
-
-            <button id="open_btn">
-                <i id="open_btn_icon" class="fa-solid fa-chevron-right"></i>
-            </button>
-        </div>
-
-        <div id="logout">
-            <button id="logout_btn">
-                <i class="fa-solid fa-right-from-bracket"></i>
-                <span class="item-description">
-                    Logout
-                </span>
-            </button>
-        </div>
-    </nav>
-
-    <main>
-        <h1>Título</h1>
-    </main>
+    
     <script src="./scriptMenu.js" defer></script>
 </body>
 
