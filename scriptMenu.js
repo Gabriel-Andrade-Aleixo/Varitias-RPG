@@ -8,6 +8,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const userNameDisplay = document.getElementById('user_name');
     const showRegisterLink = document.getElementById('show_register');
     const showLoginLink = document.getElementById('show_login');
+    const infoSection = document.querySelector('.info');
 
     let users = JSON.parse(localStorage.getItem('users')) || {}; // Armazena usuários cadastrados
     let currentUser = localStorage.getItem('currentUser'); // Usuário logado
@@ -17,9 +18,11 @@ document.addEventListener('DOMContentLoaded', function () {
             loginContainer.style.display = 'none';
             mainContent.style.display = 'block';
             userNameDisplay.textContent = currentUser;
+            infoSection.style.display = 'block'; // Mostra o elemento .info
         } else {
             loginContainer.style.display = 'flex';
             mainContent.style.display = 'none';
+            infoSection.style.display = 'none'; // Esconde o elemento .info
         }
     }
 
@@ -48,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem('currentUser', currentUser);
             updateUI();
         } else {
-            alert('Invalid credentials');
+            alert('Credenciais inválidas');
         }
     });
 
@@ -58,11 +61,11 @@ document.addEventListener('DOMContentLoaded', function () {
         const password = event.target.password.value;
 
         if (users[username]) {
-            alert('Username already exists');
+            alert('Nome de usuário já existe');
         } else {
             users[username] = password;
             localStorage.setItem('users', JSON.stringify(users));
-            alert('Registration successful');
+            alert('Registro bem-sucedido');
             document.getElementById('register_form').style.display = 'none';
             document.getElementById('login_form').style.display = 'block';
         }
