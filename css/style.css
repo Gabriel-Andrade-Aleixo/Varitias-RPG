@@ -24,6 +24,10 @@ body.dark-mode {
     color: aliceblue;
 }
 
+body.dark-mode a {
+    color: rgb(119, 167, 209);
+}
+
 #auth_container {
     display: flex;
     justify-content: center;
@@ -33,12 +37,24 @@ body.dark-mode {
     width: 100%;
 }
 
+body.dark-mode #auth_container {
+    background-color: rgb(26, 26, 26);
+}
+
 #login_form,
 #register_form {
     padding: 20px;
-    background-color: #fff;
+    background-color: aliceblue;
     border: 1px solid #ccc;
     border-radius: 5px;
+    width: 300px;
+}
+
+body.dark-mode #login_form,
+body.dark-mode #register_form {
+    background-color: #333;
+    color: white;
+    border-color: #666;
 }
 
 #login_form h2,
@@ -66,10 +82,15 @@ body.dark-mode {
     width: 100%;
     padding: 10px;
     background-color: #4f46e5;
-    color: #fff;
+    color: aliceblue;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+body.dark-mode #login_form button,
+body.dark-mode #register_form button {
+    background-color: #0a065e;
 }
 
 #login_form button:hover,
@@ -77,11 +98,17 @@ body.dark-mode {
     background-color: #3b3b9a;
 }
 
+body.dark-mode #login_form button:hover,
+body.dark-mode #register_form button:hover {
+    background-color: #070343;
+}
+
 #sidebar {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-color: #ffffff;
+    background-color: #fff;
+    border: 1px solid black;
     height: 100vh;
     border-radius: 0px 18px 18px 0px;
     position: fixed;
@@ -89,7 +116,10 @@ body.dark-mode {
     min-width: 82px;
     z-index: 2;
 }
-
+body.dark-mode #sidebar{
+    background-color: rgb(10, 10, 10);
+    border: 1px solid aliceblue;
+}
 #sidebar_content {
     padding: 12px;
 }
@@ -106,6 +136,10 @@ body.dark-mode {
     height: 50px;
     object-fit: cover;
     border-radius: 20px;
+    border: 1px solid black;
+}
+body.dark-mode #user_avatar{
+    border: 1px solid aliceblue;
 }
 
 #user_infos {
@@ -131,6 +165,9 @@ body.dark-mode {
     cursor: pointer;
 }
 
+body.dark-mode .side-item a{
+    color: aliceblue;
+}
 .side-item.active {
     background-color: #4f46e5;
 }
@@ -138,6 +175,14 @@ body.dark-mode {
 .side-item:hover:not(.active),
 #logout_btn:hover {
     background-color: #e3e9f7;
+}
+body.dark-mode .side-item.active {
+    background-color: #070343;
+}
+
+body.dark-mode .side-item:hover:not(.active),
+body.dark-mode #logout_btn:hover {
+    background-color: #3b3b9a3f;
 }
 
 .side-item a {
@@ -149,7 +194,7 @@ body.dark-mode {
 }
 
 .side-item.active a {
-    color: #e3e9f7;
+    color: aliceblue;
 }
 
 .side-item a i {
@@ -178,6 +223,10 @@ body.dark-mode {
     background-color: transparent;
 }
 
+body.dark-mode #logout_btn{
+    color: aliceblue;
+}
+
 #open_btn {
     position: absolute;
     top: 30px;
@@ -189,6 +238,10 @@ body.dark-mode {
     height: 20px;
     border: none;
     cursor: pointer;
+}
+body.dark-mode #open_btn{
+    background-color: aliceblue;
+    color: #070343;
 }
 
 #open_btn_icon {
@@ -211,6 +264,7 @@ body.dark-mode {
 
 #sidebar.open-sidebar {
     min-width: 15%;
+    max-width: 90%;
 }
 
 #sidebar.open-sidebar .item-description {
