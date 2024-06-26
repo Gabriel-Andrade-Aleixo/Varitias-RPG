@@ -19,6 +19,11 @@ body {
     background-color: #e3e9f7;
 }
 
+body.dark-mode {
+    background-color: rgb(26, 26, 26);
+    color: aliceblue;
+}
+
 #auth_container {
     display: flex;
     justify-content: center;
@@ -28,23 +33,27 @@ body {
     width: 100%;
 }
 
-#login_form, #register_form {
+#login_form,
+#register_form {
     padding: 20px;
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
 
-#login_form h2, #register_form h2 {
+#login_form h2,
+#register_form h2 {
     margin-bottom: 20px;
 }
 
-#login_form label, #register_form label {
+#login_form label,
+#register_form label {
     display: block;
     margin-bottom: 8px;
 }
 
-#login_form input, #register_form input {
+#login_form input,
+#register_form input {
     width: 100%;
     padding: 8px;
     margin-bottom: 10px;
@@ -52,7 +61,8 @@ body {
     border-radius: 5px;
 }
 
-#login_form button, #register_form button {
+#login_form button,
+#register_form button {
     width: 100%;
     padding: 10px;
     background-color: #4f46e5;
@@ -62,7 +72,8 @@ body {
     cursor: pointer;
 }
 
-#login_form button:hover, #register_form button:hover {
+#login_form button:hover,
+#register_form button:hover {
     background-color: #3b3b9a;
 }
 
@@ -214,7 +225,7 @@ body {
 
 /* Info */
 
-.info{
+.info {
     padding: 20px;
     position: absolute;
     top: 0;
@@ -222,11 +233,11 @@ body {
     width: calc(100% - 82px);
 }
 
-html{
+html {
     height: 500vw;
 }
 
-.atribut{
+.atribut {
     list-style-type: none;
     padding: 10px;
     margin: 0 0;
