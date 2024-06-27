@@ -308,7 +308,7 @@ body.dark-mode #open_btn{
     display: none;
     text-align: left;
     max-width: 600px;
-    /* margin: 20px auto; */
+    margin: 20px auto;
 }
 
 .arma-header {
@@ -318,6 +318,7 @@ body.dark-mode #open_btn{
 .arma-container {
     display: flex;
     align-items: center;
+    margin: 20px;
 }
 
 .arma-imagem {
@@ -337,4 +338,18 @@ body.dark-mode #open_btn{
 
 .arma-dano, .arma-tipo, .arma-mana, .tipo-dano, .dado-critico, .alcance, .atk-adicional, .valor, .dano-atributo {
     margin-top: 5px;
+}
+
+@media (max-width: 650px) {
+    .arma-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    
+    .arma-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
 }

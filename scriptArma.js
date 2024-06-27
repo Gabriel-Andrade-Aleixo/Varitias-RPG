@@ -2,7 +2,7 @@ const armas = {
     espada: {
         nome: "Espada",
         descricao: "Uma espada afiada feita de aço.",
-        imagem: "img/espada.jpg", // Substitua com uma URL real da imagem
+        imagem: "#", //Selecionar image.......
         dano: "1d12",
         tipo: "Corpo a Corpo",
         usaMana: "Não",
@@ -16,7 +16,7 @@ const armas = {
     arco: {
         nome: "Arco",
         descricao: "Um arco longo com flechas de penas.",
-        imagem: "https://example.com/bow.jpg", // Substitua com uma URL real da imagem
+        imagem: "#", //Selecionar image.......
         dano: "1d6",
         tipo: "À Distância",
         usaMana: "Não",
@@ -30,7 +30,7 @@ const armas = {
     cajado: {
         nome: "Cajado",
         descricao: "Um cajado mágico com poderes místicos.",
-        imagem: "https://example.com/staff.jpg", // Substitua com uma URL real da imagem
+        imagem: "#", //Selecionar image.......
         dano: "1d4",
         tipo: "Mágico",
         usaMana: "Sim",
