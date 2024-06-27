@@ -13,6 +13,11 @@
     font-style: normal;
 }
 
+html {
+    /* height: 500vw; */
+    scroll-behavior: smooth;
+}
+
 body {
     display: flex;
     min-height: 100vh;
@@ -287,12 +292,49 @@ body.dark-mode #open_btn{
     width: calc(100% - 82px);
 }
 
-html {
-    height: 500vw;
-}
-
 .atribut {
     list-style-type: none;
     padding: 10px;
     margin: 0 0;
+}
+
+/* Armas */
+
+#detalhesArma {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    /* margin: 20px auto; */
+}
+
+.arma-header {
+    text-align: center;
+}
+
+.arma-container {
+    display: flex;
+    align-items: center;
+}
+
+.arma-imagem {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.arma-descricao {
+    flex: 1;
+}
+
+.arma-stats {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.arma-dano, .arma-tipo, .arma-mana, .tipo-dano, .dado-critico, .alcance, .atk-adicional, .valor, .dano-atributo {
+    margin-top: 5px;
 }

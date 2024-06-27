@@ -108,10 +108,43 @@
     </div>
 
     <div class="info">
+        <h1>Escolha sua Arma</h1>
+    
+        <input type="text" id="pesquisaArma" placeholder="Pesquise uma arma...">
         
+        <select id="armaSelect">
+            <option value="" disabled selected>Selecione uma arma</option>
+            <option value="espada">Espada</option>
+            <option value="arco">Arco</option>
+            <option value="cajado">Cajado</option>
+        </select>
+        
+        <div id="detalhesArma">
+            <div class="arma-header">
+                <h2 id="nomeArma"></h2>
+            </div>
+            <div class="arma-container">
+                <img id="imagemArma" class="arma-imagem" src="" alt="">
+                <div class="arma-descricao">
+                    <p id="descricaoArma"></p>
+                </div>
+            </div>
+            <div class="arma-stats">
+                <div class="arma-dano"><strong>Dano:</strong> <span id="danoArma"></span></div>
+                <div class="arma-tipo"><strong>Tipo:</strong> <span id="tipoArma"></span></div>
+                <div class="arma-mana"><strong>Usa Mana:</strong> <span id="manaArma"></span></div>
+                <div class="tipo-dano"><strong>Tipo de Dano:</strong> <span id="tipoDano"></span></div>
+                <div class="dado-critico"><strong>Dado Crítico:</strong> <span id="dadoCritico"></span></div>
+                <div class="alcance"><strong>Alcance:</strong> <span id="alcance"></span></div>
+                <div class="atk-adicional"><strong>Ataque Adicional:</strong> <span id="atkAdicional"></span></div>
+                <div class="valor"><strong>Valor:</strong> <span id="valor"></span></div>
+                <div class="dano-atributo"><strong>Dano Atributo:</strong> <span id="danoAtributo"></span></div>
+            </div>
+        </div>
     </div>
 
     <script src="./scriptMenu.js" defer></script>
+    <script src="./scriptArma.js" defer></script>
 </body>
 
 </html>
