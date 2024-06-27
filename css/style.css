@@ -5,7 +5,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Oxanium', cursive;
-    transition: 0.5s;
+    /* transition: 0.5s; */
 
     font-family: "Lora", serif;
     font-optical-sizing: auto;
