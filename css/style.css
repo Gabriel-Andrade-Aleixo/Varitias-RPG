@@ -13,6 +13,41 @@
     font-style: normal;
 }
 
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.1);
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+body.dark-mode::-webkit-scrollbar {
+    width: 6px; 
+}
+
+body.dark-mode::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px; 
+}
+
+body.dark-mode::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.5); 
+}
+
+
 html {
     /* height: 500vw; */
     scroll-behavior: smooth;
@@ -115,16 +150,18 @@ body.dark-mode #register_form button:hover {
     background-color: #fff;
     border: 1px solid black;
     height: 100vh;
-    border-radius: 0px 18px 18px 0px;
+    border-radius: 0px 10px 10px 0px;
     position: fixed;
     transition: all .5s;
     min-width: 82px;
     z-index: 2;
 }
-body.dark-mode #sidebar{
+
+body.dark-mode #sidebar {
     background-color: rgb(10, 10, 10);
     border: 1px solid aliceblue;
 }
+
 #sidebar_content {
     padding: 12px;
 }
@@ -143,7 +180,8 @@ body.dark-mode #sidebar{
     border-radius: 20px;
     border: 1px solid black;
 }
-body.dark-mode #user_avatar{
+
+body.dark-mode #user_avatar {
     border: 1px solid aliceblue;
 }
 
@@ -170,9 +208,10 @@ body.dark-mode #user_avatar{
     cursor: pointer;
 }
 
-body.dark-mode .side-item a{
+body.dark-mode .side-item a {
     color: aliceblue;
 }
+
 .side-item.active {
     background-color: #4f46e5;
 }
@@ -181,6 +220,7 @@ body.dark-mode .side-item a{
 #logout_btn:hover {
     background-color: #e3e9f7;
 }
+
 body.dark-mode .side-item.active {
     background-color: #070343;
 }
@@ -228,7 +268,7 @@ body.dark-mode #logout_btn:hover {
     background-color: transparent;
 }
 
-body.dark-mode #logout_btn{
+body.dark-mode #logout_btn {
     color: aliceblue;
 }
 
@@ -244,8 +284,9 @@ body.dark-mode #logout_btn{
     border: none;
     cursor: pointer;
 }
-body.dark-mode #open_btn{
-    background-color: aliceblue;
+
+body.dark-mode #open_btn {
+    background-color: rgb(91, 172, 243);
     color: #070343;
 }
 
@@ -336,7 +377,15 @@ body.dark-mode #open_btn{
     flex-direction: column;
 }
 
-.arma-dano, .arma-tipo, .arma-mana, .tipo-dano, .dado-critico, .alcance, .atk-adicional, .valor, .dano-atributo {
+.arma-dano,
+.arma-tipo,
+.arma-mana,
+.tipo-dano,
+.dado-critico,
+.alcance,
+.atk-adicional,
+.valor,
+.dano-atributo {
     margin-top: 5px;
 }
 
@@ -345,11 +394,33 @@ body.dark-mode #open_btn{
         flex-direction: column;
         align-items: flex-start;
     }
-    
+
     .arma-imagem {
         margin-right: 0;
         margin-bottom: 10px;
         max-width: 100%;
         margin: 20px auto;
+    }
+}
+
+@media (max-height: 550px) {
+    #sidebar {
+        max-height: 100vh;
+        overflow-y: auto;
+        overflow-x: hidden;
+
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+
+    #sidebar::-webkit-scrollbar {
+        display: none;
+    }
+
+    #open_btn {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        z-index: 9999;
     }
 }
