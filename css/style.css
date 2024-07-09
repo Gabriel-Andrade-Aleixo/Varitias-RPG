@@ -389,6 +389,10 @@ body.dark-mode #open_btn {
     margin-top: 5px;
 }
 
+.quadradoSe{
+    max-width: 90%;
+}
+
 @media (max-width: 650px) {
     .arma-container {
         flex-direction: column;
