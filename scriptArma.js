@@ -69,6 +69,23 @@ const armas = {
         valor: "1.550.000T$",
         danoAtributo: "Luta"
     },
+
+    Sabre_De_Luz: {
+        nome: "Sabre de luz",
+        descricao:"Contém Atributos",
+        imagem: "#",
+        dano: "Cortante",
+        usaMana: "Não",
+        tipoDano: "Físico",
+        dadoCritico: "19-20/x2",
+        alcance: "4m",
+        atkAdicional: "+7",
+        valor: "2.550.000T$",
+        danoAtributo: "Luta"
+        
+    }
+
+
 };
 
 // Função para atualizar os detalhes da arma
