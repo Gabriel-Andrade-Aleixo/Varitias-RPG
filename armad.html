@@ -108,10 +108,42 @@
     </div>
 
     <div class="info">
+        <h1>Magias</h1>
+        <p>Magias são descobertas pelos jogadores, ciadas por eles e também altera-las</p>
+        <br>
+        <input type="text" id="pesquisaMagia" placeholder="Pesquise uma magia..." class="quadradoSe">
+
+        <select id="MagiaSelect" class="quadradoSe">
+            <option value="" disabled selected>Selecione uma magia</option>
+            <option value="Cria_Mat">Criar Matéria (Terra)</option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+            <option value=""></option>
+        </select>
         
+        <div id="detalhesMagia">
+            <div class="Magia-header">
+                <h2 id="nomeMagia"></h2>
+            </div>
+            <div class="Magia-container">
+                <img id="imagemMagia" class="Magia-imagem" src="" alt="">
+                <div class="Magia-descricao">
+                    <p id="descricaoMagia"></p>
+                </div>
+            </div>
+            <div class="Magia-stats">
+                <div class="Magia-dano"><strong>Dano:</strong> <span id="danoMagia"></span></div>
+                <div class="Magia-tipo"><strong>Tipo:</strong> <span id="tipoMagia"></span></div>
+                <div class="Magia-mana"><strong>Mana:</strong> <span id="manaMagia"></span></div>
+                <div class="tipo-dano"><strong>Elemento:</strong> <span id="tipoDano"></span></div>
+                <div class="alcance"><strong>Alcance:</strong> <span id="alcance"></span></div>
+            </div>
+        </div>
     </div>
 
     <script src="./scriptMenu.js" defer></script>
+    <script src="./scriptMagic.js" defer></script>
 </body>
 
 </html>
