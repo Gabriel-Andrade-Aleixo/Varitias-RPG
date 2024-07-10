@@ -389,6 +389,55 @@ body.dark-mode #open_btn {
     margin-top: 5px;
 }
 
+/* Magia */
+#detalhesMagia {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.Magia-header {
+    text-align: center;
+}
+
+.Magia-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.Magia-imagem {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.Magia-descricao {
+    flex: 1;
+}
+
+.Magia-stats {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.Magia-dano,
+.Magia-tipo,
+.Magia-mana,
+.tipo-dano,
+.dado-critico,
+.alcance,
+.atk-adicional,
+.valor,
+.dano-atributo {
+    margin-top: 5px;
+}
+
 .quadradoSe{
     max-width: 90%;
 }
@@ -400,6 +449,18 @@ body.dark-mode #open_btn {
     }
 
     .arma-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .Magia-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .Magia-imagem {
         margin-right: 0;
         margin-bottom: 10px;
         max-width: 100%;
