@@ -72,18 +72,19 @@ const armas = {
 
     Sabre_De_Luz: {
         nome: "Sabre de luz",
-        descricao:"Contém Atributos",
-        imagem: "#",
-        dano: "Cortante",
+        descricao: "Consiste em uma empunhadura de metal polido, que projeta uma lâmina de energia iluminada, geralmente com cerca de 1,22 metros de comprimento",
+        imagem: "#", //Selecionar image.......
+        dano: "1d10+1d4",
+        tipo: "Cortante",
         usaMana: "Não",
         tipoDano: "Físico",
         dadoCritico: "19-20/x2",
-        alcance: "4m",
-        atkAdicional: "+7",
-        valor: "2.550.000T$",
-        danoAtributo: "Luta"
-        
-    }
+        alcance: "2m",
+        atkAdicional: "+3",
+        valor: "1.200.000T$",
+        danoAtributo: "Luta/Misticismo"
+
+    },
 
 
 };
