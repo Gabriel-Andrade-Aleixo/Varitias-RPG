@@ -161,10 +161,50 @@
                 <div class="dano-atributo"><strong>Dano Atributo:</strong> <span id="danoAtributo"></span></div>
             </div>
         </div>
+
+        <h1>Armaduras</h1>
+
+        <input type="text" id="pesquisaArmadura" placeholder="Pesquise uma armadura..." class="quadradoSe">
+
+        <select id="armaduraSelect" class="quadradoSe">
+            <option value="" disabled selected>Selecione uma armadura</option>
+            <option value="Armadura_M1A">Armadura M1A</option>
+            <option value="Peitoral_Tuatha_De">Peitoral de Tuatha Dé</option>
+            <option value="Couraça_Grafeno">Couraça de Grafeno</option>
+            <option value="Armadura_Draconiana">Armadura Draconiana</option>
+            <option value="Cota_de_Malha">Cota de Malha</option>
+            <option value="Escudo_Celestial">Escudo Celestial</option>
+            <option value="Armadura_de_Couro">Armadura de Couro</option>
+            <option value="Placa_de_Titanio">Placa de Titânio</option>
+            <option value="Armadura_Elemental">Armadura Elemental</option>
+            <option value="Manto_da_Sombra">Manto da Sombra</option>
+        </select>
+        
+        <div id="detalhesArmadura">
+            <div class="armadura-header">
+                <h2 id="nomeArmadura"></h2>
+            </div>
+            <div class="armadura-container">
+                <img id="imagemArmadura" class="armadura-imagem" src="" alt="">
+                <div class="armadura-descricao">
+                    <p id="descricaoArmadura"></p>
+                </div>
+            </div>
+            <div class="armadura-stats">
+                <div class="armadura-defesa"><strong>Defesa:</strong> <span id="defesaArmadura"></span></div>
+                <div class="armadura-tipo"><strong>Tipo:</strong> <span id="tipoArmadura"></span></div>
+                <div class="mana-armadura"><strong>Usa Mana:</strong> <span id="manaArmadura"></span></div>
+                <div class="peso"><strong>Peso:</strong> <span id="pesoArmadura"></span></div>
+                <div class="resistencia"><strong>Resistência:</strong> <span id="resistenciaArmadura"></span></div>
+                <div class="valor"><strong>Valor:</strong> <span id="valorArmadura"></span></div>
+            </div>
+        </div>
+        
     </div>
 
     <script src="./scriptMenu.js" defer></script>
     <script src="./scriptArma.js" defer></script>
+    <script src="./scriptArmadura.js"></script>
 </body>
 
 </html>

@@ -108,10 +108,52 @@
     </div>
 
     <div class="info">
+        <h1>Raças</h1>
 
+        <input type="text" id="pesquisaRaca" placeholder="Pesquise uma raça..." class="quadradoSe">
+
+        <select id="racaSelect" class="quadradoSe">
+            <option value="" disabled selected>Selecione uma raça</option>
+            <option value="Humano">Humano</option>
+            <option value="Elfo">Elfo</option>
+            <option value="Anão">Anão</option>
+            <option value="Orc">Orc</option>
+            <option value="Halfling">Halfling</option>
+            <option value="Tiefling">Tiefling</option>
+            <option value="Dragonborn">Dragonborn</option>
+            <option value="Gnomo">Gnomo</option>
+            <option value="Meio_Elfo">Meio-Elfo</option>
+            <option value="Drow">Drow</option>
+            <option value="Tabaxi">Tabaxi</option>
+            <option value="Tritão">Tritão</option>
+            <option value="Aarakocra">Aarakocra</option>
+            <option value="Goliath">Goliath</option>
+            <option value="Kenku">Kenku</option>
+        </select>
+        
+        <div id="detalhesRaca">
+            <div class="raca-header">
+                <h2 id="nomeRaca"></h2>
+            </div>
+            <div class="raca-container">
+                <img id="imagemRaca" class="raca-imagem" src="#" alt="Imagem da Raça" />
+                <div class="raca-descricao">
+                    <p id="descricaoRaca"></p>
+                    <div class="raca-stats">
+                        <p><strong>Atributos:</strong> <span id="atributosRaca"></span></p>
+                        <p><strong>Habilidades:</strong> <span id="habilidadesRaca"></span></p>
+                        <p><strong>Vida:</strong> <span id="vidaRaca"></span></p>
+                        <p><strong>Mana:</strong> <span id="manaRaca"></span></p>
+                        <p><strong>Valor:</strong> <span id="valorRaca"></span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
     </div>
 
     <script src="./scriptMenu.js" defer></script>
+    <script src="./scriptRaca.js"></script>
 </body>
 
 </html>

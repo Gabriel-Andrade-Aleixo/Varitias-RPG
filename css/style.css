@@ -31,7 +31,7 @@
 }
 
 body.dark-mode::-webkit-scrollbar {
-    width: 6px; 
+    width: 6px;
 }
 
 body.dark-mode::-webkit-scrollbar-track {
@@ -40,11 +40,11 @@ body.dark-mode::-webkit-scrollbar-track {
 
 body.dark-mode::-webkit-scrollbar-thumb {
     background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 10px; 
+    border-radius: 10px;
 }
 
 body.dark-mode::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(255, 255, 255, 0.5); 
+    background-color: rgba(255, 255, 255, 0.5);
 }
 
 
@@ -389,6 +389,103 @@ body.dark-mode #open_btn {
     margin-top: 5px;
 }
 
+/* Armaduras */
+
+#detalhesArmadura {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.armadura-header {
+    text-align: center;
+}
+
+.armadura-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.armadura-imagem {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.armadura-descricao {
+    flex: 1;
+}
+
+.armadura-stats {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.armadura-defesa,
+.armadura-tipo,
+.mana-armadura,
+.peso,
+.resistencia,
+.valor {
+    margin-top: 5px;
+}
+
+.quadradoSe {
+    margin: 10px 0;
+}
+
+/* Raças */
+
+#detalhesRaca {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.raca-header {
+    text-align: center;
+}
+
+.raca-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.raca-imagem {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.raca-descricao {
+    flex: 1;
+}
+
+.raca-stats {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.raca-atributos,
+.raca-habilidades,
+.raca-vida,
+.raca-mana,
+.raca-valor {
+    margin-top: 5px;
+}
+
 /* Magia */
 #detalhesMagia {
     margin-top: 20px;
@@ -438,7 +535,7 @@ body.dark-mode #open_btn {
     margin-top: 5px;
 }
 
-.quadradoSe{
+.quadradoSe {
     max-width: 90%;
 }
 
@@ -449,6 +546,30 @@ body.dark-mode #open_btn {
     }
 
     .arma-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .armadura-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .armadura-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .raca-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .raca-imagem {
         margin-right: 0;
         margin-bottom: 10px;
         max-width: 100%;
