@@ -140,10 +140,22 @@
                 <div class="valor"><strong>Valor:</strong> <span id="valor"></span></div>
             </div>
         </div>
+
+        <h1>Habilidades</h1>
+        <div class="rank-selection">
+            <button class="rank-button" onclick="showRank('D')">Rank D</button>
+            <button class="rank-button" onclick="showRank('C')">Rank C</button>
+            <button class="rank-button" onclick="showRank('B')">Rank B</button>
+            <button class="rank-button" onclick="showRank('A')">Rank A</button>
+            <button class="rank-button" onclick="showRank('S')">Rank S</button>
+        </div>
+        <ul id="habilidades-list" class="habilidades-list"></ul>
+        <div id="habilidade-description" class="description"></div>
     </div>
 
     <script src="./scriptMenu.js" defer></script>
     <script src="./scriptMagic.js" defer></script>
+    <script src="./scriptHabilidade.js"></script>
 </body>
 
 </html>

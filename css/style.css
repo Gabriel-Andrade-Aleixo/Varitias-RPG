@@ -440,6 +440,57 @@ body.dark-mode #open_btn {
     margin: 10px 0;
 }
 
+/* Hablilidades */
+
+.rank-selection {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.rank-button {
+    margin: 5px;
+    padding: 10px 20px;
+    background-color: #003063;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+}
+
+.rank-button:hover {
+    background-color: #00254d;
+}
+
+.habilidades-list {
+    list-style: none;
+    padding: 0;
+}
+
+.habilidade-item {
+    padding: 10px;
+    border-bottom: 1px solid #000000;
+    cursor: pointer;
+}
+
+body.dark-mode .habilidade-item{
+    padding: 10px;
+    border-bottom: 1px solid aliceblue;
+    cursor: pointer;
+}
+
+.description {
+    margin-top: 20px;
+    padding: 10px;
+    /* border-top: 1px solid #dddddd; */
+    background-color: aliceblue;
+}
+
+body.dark-mode .description {
+    margin-top: 20px;
+    padding: 10px;
+    /* border-top: 1px solid #dddddd; */
+    background-color: rgb(0, 0, 0);
+}
+
 /* Raças */
 
 #detalhesRaca {
