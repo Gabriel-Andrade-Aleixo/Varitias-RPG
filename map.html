@@ -108,10 +108,42 @@
     </div>
 
     <div class="info">
+        <h1>Mapas e Lugares</h1>
+        <p>Mapas e lugares são descobertos pelos jogadores, explorados por eles e também podem ser criados.</p>
+        <br>
+        <input type="text" id="pesquisaLugar" placeholder="Pesquise um lugar..." class="quadradoSe">
         
+        <select id="LugarSelect" class="quadradoSe">
+            <option value="" disabled selected>Selecione um lugar</option>
+            <option value="Waterdeep">Waterdeep</option>
+            <option value="BaldursGate">Baldur's Gate</option>
+            <option value="Neverwinter">Neverwinter</option>
+            <option value="Silverymoon">Silverymoon</option>
+            <option value="Menzoberranzan">Menzoberranzan</option>
+            <option value="Undermountain">Undermountain</option>
+        </select>
+        
+        <div id="detalhesLugar">
+            <div class="Lugar-header">
+                <h2 id="nomeLugar"></h2>
+            </div>
+            <div class="Lugar-container">
+                <img id="imagemLugar" class="Lugar-imagem" src="" alt="">
+                <div class="Lugar-descricao">
+                    <p id="descricaoLugar"></p>
+                </div>
+            </div>
+            <div class="Lugar-stats">
+                <div class="Lugar-classificacao"><strong>Classificação:</strong> <span id="classificacaoLugar"></span></div>
+                <div class="Lugar-localizacao"><strong>Localização:</strong> <span id="localizacaoLugar"></span></div>
+                <div class="Lugar-caracteristica"><strong>Características:</strong> <span id="caracteristicaLugar"></span></div>
+            </div>
+        </div>
+          
     </div>
 
     <script src="./scriptMenu.js" defer></script>
+    <script src="./scriptMap.js"></script>
 </body>
 
 </html>

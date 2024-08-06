@@ -339,6 +339,50 @@ body.dark-mode #open_btn {
     margin: 0 0;
 }
 
+/* Mapas */
+
+#detalhesLugar {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.lugar-header {
+    text-align: center;
+}
+
+.lugar-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.lugar-imagem {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.lugar-descricao {
+    flex: 1;
+}
+
+.lugar-stats {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.lugar-classificacao,
+.lugar-localizacao,
+.lugar-caracteristica {
+    margin-top: 5px;
+}
+
 /* Armas */
 
 #detalhesArma {
@@ -440,6 +484,50 @@ body.dark-mode #open_btn {
     margin: 10px 0;
 }
 
+/* Deuses */
+
+#detalhesDeus {
+    margin-top: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 15px;
+    display: none;
+    text-align: left;
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+.deus-header {
+    text-align: center;
+}
+
+.deus-container {
+    display: flex;
+    align-items: center;
+    margin: 20px;
+}
+
+.deus-imagem {
+    max-width: 150px;
+    margin-right: 20px;
+}
+
+.deus-descricao {
+    flex: 1;
+}
+
+.deus-stats {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.deus-poder,
+.deus-dominio,
+.deus-simbolo {
+    margin-top: 5px;
+}
+
 /* Hablilidades */
 
 .rank-selection {
@@ -471,7 +559,7 @@ body.dark-mode #open_btn {
     cursor: pointer;
 }
 
-body.dark-mode .habilidade-item{
+body.dark-mode .habilidade-item {
     padding: 10px;
     border-bottom: 1px solid aliceblue;
     cursor: pointer;
@@ -603,6 +691,18 @@ body.dark-mode .description {
         margin: 20px auto;
     }
 
+    .deus-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .deus-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
     .armadura-container {
         flex-direction: column;
         align-items: flex-start;
@@ -633,6 +733,18 @@ body.dark-mode .description {
     }
 
     .Magia-imagem {
+        margin-right: 0;
+        margin-bottom: 10px;
+        max-width: 100%;
+        margin: 20px auto;
+    }
+
+    .lugar-container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .lugar-imagem {
         margin-right: 0;
         margin-bottom: 10px;
         max-width: 100%;

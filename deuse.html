@@ -108,10 +108,42 @@
     </div>
 
     <div class="info">
-        
+        <h1>Deuses</h1>
+        <p>Deuses são descobertos pelos jogadores, criados por eles e também podem venerá-los</p>
+        <br>
+        <input type="text" id="pesquisaDeus" placeholder="Pesquise um deus..." class="quadradoSe">
+
+        <select id="DeusSelect" class="quadradoSe">
+            <option value="" disabled selected>Selecione um deus</option>
+            <option value="Bahamut">Bahamut</option>
+            <option value="Moradin">Moradin</option>
+            <option value="Pelor">Pelor</option>
+            <option value="Lolth">Lolth</option>
+            <option value="Tiamat">Tiamat</option>
+            <option value="Corellon">Corellon</option>
+        </select>
+
+        <div id="detalhesDeus">
+            <div class="Deus-header">
+                <h2 id="nomeDeus"></h2>
+            </div>
+            <div class="Deus-container">
+                <img id="imagemDeus" class="Deus-imagem" src="" alt="">
+                <div class="Deus-descricao">
+                    <p id="descricaoDeus"></p>
+                </div>
+            </div>
+            <div class="Deus-stats">
+                <div class="Deus-poder"><strong>Poder:</strong> <span id="poderDeus"></span></div>
+                <div class="Deus-dominio"><strong>Domínio:</strong> <span id="dominioDeus"></span></div>
+                <div class="Deus-simbolo"><strong>Símbolo:</strong> <span id="simboloDeus"></span></div>
+            </div>
+        </div>
+
     </div>
 
     <script src="./scriptMenu.js" defer></script>
+    <script src="./scriptDeuses.js"></script>
 </body>
 
 </html>
